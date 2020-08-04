@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ "$1" = "-l" ]; then
+  if [ ! -e ~/.mvim/file.lst ]; then
+    touch ~/.mvim/file.lst
+  fi
+  if [ "`cat ~/.mvim/file.lst`" = "" ]; then
+    echo not registered
+    exit
+  fi
+  cat ~/.mvim/file.lst | tac | nl
+  echo -n n\>
+  read n
+  vim `cat ~/.mvim/file.lst | tac | sed -n ${n}P`
+  exit
+fi
+if [ "$1" = "-r" ]; then
+  rm ~/.mvim/file.lst
+  touch ~/.mvim/file.lst
+  exit
+fi
+
+ab=`abs-path $1`
+if [ "`cat ~/.mvim/file.lst | grep -x $ab`" = "" ]; then
+  echo $ab >> ~/.mvim/file.lst
+fi
+vim $1
