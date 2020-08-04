@@ -15,16 +15,16 @@ source ~/.bash_profile
 ## how to use
 open file
 ```bash
-tvim <file>
+mvim <file>
 ```
 
 show history and open file
 ```
-tvim -l
+mvim -l
 #enter file number
 ```
 
 reset history
 ```bash
-tvim -r
+mvim -r
 ```
