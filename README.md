@@ -1,5 +1,10 @@
 # mvim
 
+## Requirement
+OS: Ubuntu
+
+git
+
 ## installation
 ```bash
 git clone https://github.com/TakutoYoshikai/mvim.git ~/.mvim
