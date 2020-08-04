@@ -2,8 +2,8 @@
 
 ## Requirement
 OS: Ubuntu
-
-git
+* git
+* vim
 
 ## installation
 ```bash
