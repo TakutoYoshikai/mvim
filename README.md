@@ -21,7 +21,7 @@ mvim <file>
 show history and open file
 ```
 mvim -l
-#enter file number
+#enter file number to open
 ```
 
 reset history
