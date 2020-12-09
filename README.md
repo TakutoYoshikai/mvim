@@ -1,4 +1,5 @@
 # mvim
+mvim is a extended vim command that memorize files opened in the past.
 
 ## Requirement
 OS: Ubuntu
